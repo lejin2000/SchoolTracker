@@ -16,9 +16,12 @@ namespace SchoolTracker
         static List<Student> students = new List<Student>();
         static void Main(string[] args)
         {
-            
+
             ///Console.WriteLine("Hello World!");
-            
+            ///
+            PayRoll payRoll = new PayRoll();
+            payRoll.PayAll();
+
             var adding = true;
             while (adding)
             {
@@ -124,10 +127,5 @@ namespace SchoolTracker
 
     }
 
-    class Teacher : Member
-    {
-         
-        public string Subject;
-       
-    }
+    
 }
